@@ -1,4 +1,4 @@
-/* Code by Dzoom (https://yougame.biz/threads/88864) */
+/* Code by Dzoom (https://yougame.biz/threads/88864), Fixed by Vivers*/
 
 const { Client } = require("discord.js")
 
@@ -103,4 +103,4 @@ client.on("voiceStateUpdate",(oldMember,newMember)=>{
 }) 
 
 
-client.login("NjQ3MDU0MjI5NzIyMTAzODE0.XsF8jA.Gt4h6N9snjfsH0XtnDytJFue87A");
+client.login("YOUR TOKEN");
