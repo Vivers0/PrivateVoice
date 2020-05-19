@@ -1,7 +1,4 @@
-/* Code by Dzoom (https://yougame.biz/threads/88864), Fixed by Vivers*/
-
 const { Client } = require("discord.js")
-
 var client = new Client();
 
 var servers = {};
@@ -72,7 +69,6 @@ client.on("voiceStateUpdate",(oldMember,newMember)=>{
                             clearInterval(servers[newMember.guild.id].voiceMember[newMember.id].interval);
                         }
                     }else if(!newMember.voiceChannel){
-                        // oldMember.voiceChannel.guild.channels.find(channel=>channel.id == servers[newMember.guild.id].voiceMember[newMember.id].room).delete();
                         clearInterval(servers[newMember.guild.id].voiceMember[newMember.id].interval);
                     }
                 },1000)
@@ -93,9 +89,6 @@ client.on("voiceStateUpdate",(oldMember,newMember)=>{
         if(servers[newMember.guild.id].voiceMember[newMember.id].room == oldMember.voiceChannel.id){
             oldMember.voiceChannel.guild.channels.find(channel=>channel.id == servers[newMember.guild.id].voiceMember[newMember.id].room).delete();
         }
-        // if (oldMember.voiceChannel.members.size == 0) {
-        //     oldMember.voiceChannel.guild.channels.find(channel=>channel.id == servers[newMember.guild.id].voiceMember[newMember.id].room).delete();
-        // }
     }
 } catch(e) {
     console.log(e)
