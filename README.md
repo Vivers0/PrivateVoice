@@ -3,11 +3,21 @@
 ## About
 **private.js** - Creating private rooms in the category in which you specify (or in which the main voice channel is located)
 **privateWithParent.js** - Automatic creation of private rooms and categories. If you turn off the bot, then it will stop working in the category in which it was before!
+**easyPrivateVoices.coffee** - Simple private rooms on CoffeeScript
 
 ## Usage
-In the file you selected, specify the token from the bot (**client.login("token here")**) and run it with one of the commands:
-- **npm private** for private.js
-- **npm privateParent** for privateWithParent.js
+Transfer the file to the config **cfg/config.json** and enter all the necessary data:
+```json
+    {
+        "token": "",
+        "voiceID": "",
+        "parentID": ""
+    }
+```
+Next, go to the console and enter one of the commands you need:
+- **npm run start** for private.js
+- **npm run startParent** for privateWithParent.js
+- **npm run startEasy** for easyPrivateVoice.coffee
 
 ## P.S.
 Code creator - [Dzoom](https://yougame.biz/threads/88864)
