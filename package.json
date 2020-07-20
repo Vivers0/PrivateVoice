@@ -1,13 +1,10 @@
 {
   "name": "private-voice",
   "version": "1.0.0",
-  "description": "",
+  "description": "Easy Private voice for Discord server",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 0",
-    "start": "node private.js",
-    "startParent": "node privateWithParent.js",
-    "startEasy": "coffee --compile --output coffee/build/ coffee/src/ && node coffee/build/easyPrivateVoice"
+    "start": "node index.js"
   },
   "author": "Vivers",
   "license": "ISC",
