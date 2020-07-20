@@ -6,14 +6,9 @@
 
   client = new Client();
 
-  ({token, voiceID, parentID} = require("../../cfg/config.json"));
+  ({token, voiceID, parentID} = require("./config.json"));
 
   client.login(token);
-
-  config = {
-    voice: "712181617510318230",
-    parent: "712181616608280576"
-  };
 
   client.on('ready', function() {
     return console.log("Ready!");
